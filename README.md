@@ -3,7 +3,7 @@
 # General description
 This is a simple Rock Paper Scissor game written purely in Python, and leveraging SQLite and Alembic.
 
-Currently the game supports only 2 players. When the game is run, the two players are prompted to enter their names. Then each playes will take a turn and make a choice. The valid choiced are `rock`, `paper`, `scissors`, `save` and `quit`.
+Currently the game supports only 2 players. When the game is run, the two players are prompted to enter their names. Then each player will take a turn and make a choice. The valid choiced are `rock`, `paper`, `scissors`, `save` and `quit`.
 - If a player chooses `save`, the game will end and the current scores will be saved.
 - If a player chooses `quit`, that's an indication of a rage quit. The game will not be saved and progress will be lost for both players.
 - Otherwise the game will be played normally. The winner of each round will be displayed, alongside their current scores.
@@ -73,15 +73,15 @@ The game's `main.py` logic (and imagined API calls) can be described like so:
     - `POST /api/v1/signup` and `POST /api/v1/login`
     - Payload `{"username": "username"}`
     - No password needed currently :)
-2. 2 players initiate a game via `api.create_game`:
+2. 2 players initiate a game via `api.create_game`.
 
     The REST equivalent could be:
     - `POST /api/v1/games`
     - Payload `{"user1_id": "user1_id", "user2_id": "user2_id"}`
     - Response: a game id and a session token
-3. The 2 players play the game via `api.play`:
+3. The 2 players play the game via `api.play`.
     - No REST equivalent in this case. This logic can live on the frontend.
-4. The game is finished and progress is potentially saved via `api.save_game` and `api.end_game`:
+4. The game is finished and progress is potentially saved via `api.save_game` and `api.end_game`.
 
     The REST equivalent could be:
     - `POST /api/v1/games/{game_id}`
@@ -103,3 +103,4 @@ Helpers function are defined in `src/utils.py`.
 8. Add CI/CD pipeline.
 9. Integration tests.
 10. Flake8 and isort.
+11. Don't push to main branch :)
