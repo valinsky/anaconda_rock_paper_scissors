@@ -52,7 +52,7 @@ Enjoy!
 # Run tests
 
 ```
-pip install -r requirements/base.txt
+pip install -r requirements/test.txt
 ```
 
 Run tests using pytest
