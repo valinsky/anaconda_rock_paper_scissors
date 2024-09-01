@@ -34,7 +34,7 @@ alembic init alembic
 
 Edit the `alembic/env.py` file:
 - Add `from src.models import Base` after the other imports at the top of the file.
-- Set `target_metadata = Base.metadata`
+- Change `target_metadata = None` to `target_metadata = Base.metadata`.
 
 ### Run migrations
 ```
