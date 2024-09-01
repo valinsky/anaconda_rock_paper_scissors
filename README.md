@@ -87,7 +87,7 @@ The game's `main.py` logic (and imagined API calls) can be described like so:
     - `POST /api/v1/games/{game_id}`
     - Payload `{"user1_score": 4, "user2_score": 2, "save": boolean}`
 
-Models are defined in `src/models.py`. 2 models are defined. A `User`s models which contains a user id and a username. A `Game` model which contains a game id, 2 foreign keys to the `User` model representing the 2 players of a game, the individual scores for the players, and a game status, either started or finished. Both models inherit a `TimestampMixin` which define `created_at` and `updated_at` timestamp fields.
+Models are defined in `src/models.py`. 2 models are defined. A `User` model which contains a user id and a username. A `Game` model which contains a game id, 2 foreign keys to the `User` model representing the 2 players of a game, the individual scores for the players, and a game status, either started or finished. Both models inherit a `TimestampMixin` which define `created_at` and `updated_at` timestamp fields.
 
 Helpers function are defined in `src/utils.py`.
 
