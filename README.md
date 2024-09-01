@@ -100,5 +100,6 @@ Helpers function are defined in `src/utils.py`.
 5. Spin up a Django or FastAPI server and add REST API endpoints, as described above. Otherwise, AWS Lambda functions can be used.
 6. Create a frontend UI that comsumes the APIs. Move `api.play` logic to the frontend.
 7. Use a more scalable, secure and feature rich database, like PostgreSQL or DynamoDB.
-8. Integration tests.
-9. Flake8 and isort.
+8. Add CI/CD pipeline.
+9. Integration tests.
+10. Flake8 and isort.
