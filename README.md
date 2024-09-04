@@ -94,7 +94,7 @@ Helpers function are defined in `src/utils.py`.
 # Future enhancements
 
 1. Enhance the login functionality by using a password. Optional 2 factor auth.
-2. Add roles and permissions to users.
+2. Add computer player.
 3. Have more than 2 players play at the same time.
 4. Players have multiple choices besides the basic ones.
 5. Spin up a Django or FastAPI server and add REST API endpoints, as described above. Otherwise, AWS Lambda functions can be used.
